@@ -1,0 +1,13 @@
+{
+  "name": "jazzy desktop",
+  "dockerFile": "Dockerfile",
+  "runArgs": [
+    "--privileged",
+    "--network=host"
+  ],
+  "workspaceMount": "source=${localWorkspaceFolder}/ros2_ws,target=/${localWorkspaceFolderBasename}/ros2_ws,type=bind",
+  "workspaceFolder": "/${localWorkspaceFolderBasename}/ros2_ws",
+  // "mounts": [
+  //   "source=${localEnv:HOME}${localEnv:USERPROFILE}/.bash_history,target=/home/vscode/.bash_history,type=bind"
+  // ]
+}
