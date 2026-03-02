@@ -9,7 +9,7 @@ controller_manager:
       type: diff_drive_controller/DiffDriveController
 
     arm_joints_controller:
-      type: position_controllers/JointGroupPositionController
+      type: forward_command_controller/ForwardCommandController
 
 diff_drive_controller:
   ros__parameters:

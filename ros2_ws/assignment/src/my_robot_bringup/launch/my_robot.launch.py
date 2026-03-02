@@ -55,5 +55,6 @@ def generate_launch_description():
         control_node,
         joint_state_broadcaster_spawner,
         diff_drive_controller_spawner,
+        arm_joints_controller_spawner,
         rviz_node,
     ])
